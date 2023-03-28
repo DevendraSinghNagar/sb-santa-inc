@@ -1,0 +1,15 @@
+header {
+    height: 150px;
+
+    &::before {
+        background-image: url('./../../../assets/images/pine.png');
+        background-repeat: no-repeat;
+        transform: rotatex(180deg);
+        content: "";
+        position: absolute;
+        height: 150px;
+        width: 100%;
+        background-size: contain;
+        background-position: right;
+    }
+}

@@ -1,0 +1,38 @@
+<aside>
+    <header class="d-flex justify-content-between d-sm-block my-sm-4 py-2">
+        <a class="d-none d-sm-block" href="/" title="Santa Inc."><img alt="Santa Inc."
+                src="../../../assets/images/santa.png" /></a>
+        <button (click)="toggleNav()" class="d-inline-block d-sm-none" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi" fill="currentColor"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z">
+                </path>
+            </svg>
+        </button>
+        <h1 class="d-inline-block d-sm-block text-end text-sm-center my-3 me-4 me-sm-0">Santa Inc.</h1>
+        <span class="d-inline-block d-sm-block text-end me-4">V4.1.2</span>
+    </header>
+    <nav [ngClass]="navClass">
+        <ul>
+            <li class="mb-5">
+                <a [routerLink]="['delivery-list']" routerLinkActive="active">
+                    <span><img alt="Delivery" src="../../../assets/images/santa.png" />Delivery</span>
+                </a>
+            </li>
+            <li class="mb-5">
+                <a [routerLink]="['legal']" routerLinkActive="active">
+                    <span><img alt="Delivery" src="../../../assets/images/santa.png" />Legal</span>
+                </a>
+            </li>
+            <li>
+                <a [routerLink]="['/logout']" routerLinkActive="active">
+                    <span><img alt="Delivery" src="../../../assets/images/santa.png" />Desconnect</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <footer class="">All right reserved</footer>
+</aside>
